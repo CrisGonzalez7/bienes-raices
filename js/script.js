@@ -1,7 +1,7 @@
 // Animación Ícono Menú
 let elementoMenu = document.getElementsByClassName('icono-menu')[0];
 
-elementoMenu.addEventListener('click', function(event) {
+elementoMenu.addEventListener('click', function() {
     elementoMenu.classList.toggle('activo');
 });
 
@@ -10,8 +10,8 @@ let menuPadre = document.getElementsByClassName('enlace');
 
 
 // Se recorre uno por uno los elementos y se le agrega un listener para el click
-for (var i = 0; i < menuPadre.length; i++) {
-    menuPadre[i].addEventListener('click', function(event) {
+for (const element of menuPadre) {
+    element.addEventListener('click', function() {
         this.classList.toggle('activo');
     });
 }
