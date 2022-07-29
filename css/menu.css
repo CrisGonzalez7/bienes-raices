@@ -1,5 +1,5 @@
 :root {
-    --color-linea: white;
+    --blanco: white;
 }
 
 .icono-menu {
@@ -9,14 +9,14 @@
 
 .linea-1 {
     height: 3px;
-    background-color: var(--color-linea);
+    background-color: var(--blanco);
     border-radius: 5px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .linea-2 {
     height: 3px;
-    background-color: var(--color-linea);
+    background-color: var(--blanco);
     border-radius: 5px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
     margin: 6px auto;
@@ -25,7 +25,7 @@
 
 .linea-3 {
     height: 3px;
-    background-color: var(--color-linea);
+    background-color: var(--blanco);
     border-radius: 5px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 }
@@ -163,4 +163,76 @@
     .checkbtn .icono-mobile {
         display: none;
     }
+}
+
+
+/* Menu de navegación */
+
+.navegacion {
+    position: fixed;
+    width: 100%;
+    top: 6rem;
+    left: 100%;
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+@media (min-width: 750px) {
+    .navegacion {
+        position: inherit;
+        display: flex;
+        text-align: center;
+    }
+}
+
+.navegacion .enlaces {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 750px) {
+    .navegacion .enlaces {
+        margin: auto 0px auto auto;
+        text-align: right;
+        font-size: 1.4rem;
+    }
+}
+
+.navegacion .enlaces .enlace {
+    padding: 25px 0 25px 40px;
+    line-height: 30px;
+    border-top: solid 0.1px #58585B;
+}
+
+@media (min-width: 750px) {
+    .navegacion .enlaces .enlace {
+        padding: 0 0 0 80px;
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        border: none;
+    }
+}
+
+.navegacion .enlaces .enlace:last-child {
+    border-bottom: solid 0.1px #58585B;
+}
+
+@media (min-width: 750px) {
+    .navegacion .enlaces .enlace:last-child {
+        border: none;
+    }
+}
+
+.navegacion .enlaces .enlace a {
+    color: var(--blanco);
+}
+
+.navegacion .enlaces .enlace a.active,
+.navegacion .enlaces .enlace a:hover {
+    color: var(--blanco);
+    transition: 0.3s;
+}
+
+.navegacion .enlaces .enlace a.active {
+    font-weight: 700;
 }
