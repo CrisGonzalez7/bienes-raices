@@ -144,7 +144,7 @@
     display: block;
     height: 32px;
     width: 32px;
-    margin: auto 0;
+    margin: 10px 10px auto auto;
 }
 
 @media (min-width: 750px) {
