@@ -111,7 +111,7 @@ h4 {
 
 .site-header {
     background-color: #333333;
-    padding: 1rem 0 3rem 0;
+    padding: 64px 0 3rem 0;
 }
 
 .site-header.inicio {
@@ -141,6 +141,7 @@ h4 {
     padding-bottom: 2rem;
     max-width: 60rem;
     line-height: 2;
+    margin-top: auto;
 }
 
 @media (min-width: 768px) {
@@ -150,18 +151,21 @@ h4 {
 }
 
 .barra {
-    padding-top: 3rem;
+    padding: 1rem 3rem;
     display: flex;
     text-align: start;
+    background-color: #38464f;
+    position: fixed;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-    .barra {
+    /*   .barra {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 3rem;
-    }
+    }*/
 }
 
 
@@ -187,19 +191,6 @@ h4 {
 
 .navegacion a:hover {
     color: #71b100;
-}
-
-
-/** Mobile Menu **/
-
-.mobile-menu img {
-    width: 5rem;
-}
-
-@media (min-width: 768px) {
-    .mobile-menu {
-        display: none;
-    }
 }
 
 

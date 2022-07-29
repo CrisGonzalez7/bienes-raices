@@ -2,6 +2,10 @@
     --blanco: white;
 }
 
+.logo {
+    margin: auto;
+}
+
 .icono-menu {
     width: 32px;
     margin: auto;
@@ -171,7 +175,7 @@
 .navegacion {
     position: fixed;
     width: 100%;
-    top: 10rem;
+    top: 8rem;
     left: 100%;
     transition: all 0.5s;
     z-index: 10;
@@ -180,7 +184,7 @@
 
 @media (min-width: 750px) {
     .navegacion {
-        position: inherit;
+        position: initial;
         display: flex;
         text-align: center;
         background: none;
