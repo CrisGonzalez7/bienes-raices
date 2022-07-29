@@ -171,10 +171,11 @@
 .navegacion {
     position: fixed;
     width: 100%;
-    top: 6rem;
+    top: 10rem;
     left: 100%;
     transition: all 0.5s;
     z-index: 10;
+    background-color: #38464f;
 }
 
 @media (min-width: 750px) {
@@ -182,6 +183,7 @@
         position: inherit;
         display: flex;
         text-align: center;
+        background: none;
     }
 }
 
@@ -198,9 +200,9 @@
 }
 
 .navegacion .enlaces .enlace {
-    padding: 25px 0 25px 40px;
+    padding: 15px 0 15px 40px;
     line-height: 30px;
-    border-top: solid 0.1px #58585B;
+    list-style: none;
 }
 
 @media (min-width: 750px) {
@@ -211,10 +213,6 @@
         margin: 0 5px;
         border: none;
     }
-}
-
-.navegacion .enlaces .enlace:last-child {
-    border-bottom: solid 0.1px #58585B;
 }
 
 @media (min-width: 750px) {

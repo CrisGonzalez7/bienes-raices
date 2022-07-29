@@ -151,6 +151,8 @@ h4 {
 
 .barra {
     padding-top: 3rem;
+    display: flex;
+    text-align: start;
 }
 
 @media (min-width: 768px) {
@@ -197,20 +199,6 @@ h4 {
 @media (min-width: 768px) {
     .mobile-menu {
         display: none;
-    }
-}
-
-.navegacion:target {
-    display: block;
-}
-
-.navegacion {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .navegacion {
-        display: block;
     }
 }
 
