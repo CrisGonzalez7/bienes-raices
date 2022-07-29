@@ -1,0 +1,166 @@
+:root {
+    --color-linea: white;
+}
+
+.icono-menu {
+    width: 32px;
+    margin: auto;
+}
+
+.linea-1 {
+    height: 3px;
+    background-color: var(--color-linea);
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.linea-2 {
+    height: 3px;
+    background-color: var(--color-linea);
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+    margin: 6px auto;
+    /* Separación entre lineas */
+}
+
+.linea-3 {
+    height: 3px;
+    background-color: var(--color-linea);
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.icono-menu .linea-1 {
+    animation: linea-1-inicial ease-in-out forwards 0.4s;
+}
+
+.icono-menu .linea-2 {
+    animation: linea-2-inicial ease-in-out forwards 0.4s;
+}
+
+.icono-menu .linea-3 {
+    animation: linea-3-inicial ease-in-out forwards 0.4s;
+}
+
+.icono-menu.activo .linea-1 {
+    animation: linea-1 ease-in-out forwards 0.4s;
+}
+
+.icono-menu.activo .linea-2 {
+    animation: linea-2 ease-in-out forwards 0.2s;
+}
+
+.icono-menu.activo .linea-3 {
+    animation: linea-3 ease-in-out forwards 0.4s;
+}
+
+@keyframes linea-1 {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(8px) rotate(0);
+    }
+    100% {
+        transform: translateY(8px) rotate(45deg);
+    }
+}
+
+@keyframes linea-1-inicial {
+    0% {
+        transform: translateY(8px) rotate(45deg);
+    }
+    50% {
+        transform: translateY(8px) rotate(0);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes linea-2 {
+    0% {
+        width: 32px;
+        opacity: 1;
+    }
+    80% {
+        width: 10px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 0px;
+        opacity: 0;
+    }
+}
+
+@keyframes linea-2-inicial {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+    50% {
+        width: 10px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 32px;
+        opacity: 1;
+    }
+}
+
+@keyframes linea-3 {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-10px) rotate(0);
+    }
+    100% {
+        transform: translateY(-10px) rotate(135deg);
+    }
+}
+
+@keyframes linea-3-inicial {
+    0% {
+        transform: translateY(-10px) rotate(135deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(0);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~nav {
+    left: 0;
+}
+
+.checkbtn {
+    display: block;
+    height: 32px;
+    width: 32px;
+    margin: auto 0;
+}
+
+@media (min-width: 750px) {
+    .checkbtn {
+        display: none;
+    }
+}
+
+.checkbtn .icono-mobile {
+    display: flex;
+    height: 32px;
+    margin: auto 0;
+}
+
+@media (min-width: 750px) {
+    .checkbtn .icono-mobile {
+        display: none;
+    }
+}

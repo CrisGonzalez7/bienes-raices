@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
@@ -19,11 +20,17 @@
                     <img src="img/logo.svg" alt="Logotipo de bienes raíces">
                 </a>
 
-                <div class="mobile-menu">
-                    <a href="#navegacion">
-                        <img src="img/barras.svg" alt="Icono Menu">
-                    </a>
-                </div>
+                <!--Botón-->
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <div class="icono-mobile">
+                        <div class="icono-menu">
+                            <div class="linea-1"></div>
+                            <div class="linea-2"></div>
+                            <div class="linea-3"></div>
+                        </div>
+                    </div>
+                </label>
 
                 <nav id="navegacion" class="navegacion">
                     <a href="nosotros.html">Nosotros</a>
@@ -207,6 +214,8 @@
             <p class="copyright">Todos los derechos reservados 2019</p>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
